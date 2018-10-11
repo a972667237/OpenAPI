@@ -55,42 +55,7 @@ POST {base_url}/message.query
 
 | 参数名称 | 参数类型 | 参数是否必须？ | 说明 | 样例 |
 |:--------:|:--------:|:--------------:|------|------|
-| `vchannel_id` | `string` | 是 | 待查询 vchannel_id | =bw52O |
-| `query` | `string` | 是 | 消息查询 payload |  |
-
-```javascript
-// latest
-{
-  "vchannel_id": "=bw52O",
-  "query": {
-    "latest": {
-      "limit": 10
-    }
-  }
-}
-
-// since
-{
-  "vchannel_id": "=bw52O",
-  "query": {
-    "since": {
-      "ts": 1485236262366
-    }
-  }
-}
-
-// window
-{
-  "vchannel_id": "=bw52O",
-  "query": {
-    "window": {
-      "from_ts": 1485236262366,
-      "to_ts": 1485236362366,
-      "forward": 100
-    }
-  }
-}
-```
+| `message_info` | `string` | 是 |  |  |
 
 ## 响应
 

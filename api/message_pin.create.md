@@ -1,11 +1,11 @@
-# channel.archive
+# message_pin.create
 
-归档一个讨论组。
+置顶消息
 
 ## 请求方式
 
 ```
-POST {base_url}/channel.archive
+POST {base_url}/message_pin.create
 ```
 
 ## 请求参数
@@ -14,7 +14,7 @@ POST {base_url}/channel.archive
 
 | 参数名称 | 参数类型 | 参数是否必须？ | 说明 | 样例 |
 |:--------:|:--------:|:--------------:|------|------|
-| `channel_info` | `string` | 是 |  |  |
+| `message_pin_info` | `string` | 是 |  |  |
 
 ## 响应
 
@@ -22,21 +22,14 @@ POST {base_url}/channel.archive
 
 ```javascript
 {
-  "private": false,
-  "general": true,
-  "latest_ts": 1486367046281,
-  "uid": "=bw52O",
-  "name": "所有人",
-  "is_member": false,
-  "is_active": false,
-  "type": "normal",
-  "topic": null,
-  "member_uids": [
-    "=bw52O"
-  ],
+  "id": "=bw52T",
+  "team_id": "=bw52U",
+  "uid": "=bw52W",
   "vchannel_id": "=bw52O",
-  "id": "=bw52O",
-  "team_id": "=bw52O"
+  "message_id": "=bw53a",
+  "message_key": "1539079277448.0002",
+  "created_at": "2018-10-10T09:48:55.000+0800",
+  "updated_at": "2018-10-10T09:48:55.000+0800"
 }
 ```
 ### 错误响应

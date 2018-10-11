@@ -14,8 +14,7 @@ POST {base_url}/channel.invite
 
 | 参数名称 | 参数类型 | 参数是否必须？ | 说明 | 样例 |
 |:--------:|:--------:|:--------------:|------|------|
-| `channel_id` | `string` | 是 | 讨论组 id | =bw52O |
-| `invite_uid` | `string` | 是 | 邀请用户 id | =bw52O |
+| `channel_info` | `string` | 是 |  |  |
 
 ## 响应
 

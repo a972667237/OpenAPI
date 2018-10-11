@@ -1,11 +1,11 @@
-# meta
+# message_pin.delete
 
-返回 BearyChat API 的状态。
+删除置顶消息
 
 ## 请求方式
 
 ```
-GET {base_url}/meta
+POST {base_url}/message_pin.delete
 ```
 
 ## 请求参数
@@ -16,12 +16,6 @@ GET {base_url}/meta
 ## 响应
 
 ### 200
-
-```javascript
-{
-  "version": "1"
-}
-```
 ### 错误响应
 
 ```javascript
